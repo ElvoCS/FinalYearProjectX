@@ -1,0 +1,16 @@
+.home__imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  padding: 50px;
+}
+.title {
+  text-align: center;
+  font-size: 20px;
+}
