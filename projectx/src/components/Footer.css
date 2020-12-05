@@ -1,0 +1,19 @@
+.footer {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer > p {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.card_logo {
+  width: 6%;
+  padding-left: 2px;
+  padding-right: 2px;
+}

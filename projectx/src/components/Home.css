@@ -12,5 +12,46 @@
 }
 .title {
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
+  color: black;
+}
+.login__container {
+  text-align: center;
+  align-items: center;
+  margin-bottom: 50px;
+  width: 50%;
+}
+
+.breaker {
+  border-bottom: 2px solid grey;
+}
+.button_log {
+  background-color: #3f51b5;
+  font-size: 24px;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 14px 14px;
+  color: white;
+  transition-duration: 0.4s;
+  border: 3px solid #3f51b5;
+}
+.button_sign {
+  background-color: #3f51b5;
+  font-size: 24px;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 14px 14px;
+  color: white;
+  transition-duration: 0.4s;
+  border: 3px solid #3f51b5;
+}
+.button_sign:hover {
+  border: 3px solid grey;
+  background-color: white;
+  color: rgb(85, 83, 83);
+}
+.button_log:hover {
+  border: 3px solid grey;
+  background-color: white;
+  color: rgb(85, 83, 83);
 }

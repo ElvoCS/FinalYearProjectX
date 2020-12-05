@@ -1,0 +1,11 @@
+.container__lottieLogo {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d2763;
+  margin-top: 30vh;
+}
+.lottie__logo {
+  height: 100%;
+}
