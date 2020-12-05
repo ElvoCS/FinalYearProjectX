@@ -4,7 +4,7 @@ import CardContent from "@material-ui/core/CardContent";
 
 import "./CardStyle.css";
 
-function Test() {
+function Info() {
   return (
     <div className="container">
       <Card
@@ -44,4 +44,4 @@ function Test() {
   );
 }
 
-export default Test;
+export default Info;

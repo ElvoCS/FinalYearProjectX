@@ -3,8 +3,10 @@ import "./App.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
-import Loading from "./components/Loading";
 import Foo from "./components/Foo";
+import Test from "./components/Test";
+import Info from "./components/Info";
+import Learn from "./components/Learn";
 function App() {
   return (
     <Router>
@@ -13,21 +15,21 @@ function App() {
           {/*learn */}
           <Route path="/learn">
             <Header />
-
+            <Learn />
             <Footer />
           </Route>
 
           {/* test */}
           <Route path="/test">
             <Header />
-
+            <Test />
             <Footer />
           </Route>
 
           {/*info */}
           <Route path="/info">
             <Header />
-
+            <Info />
             <Footer />
           </Route>
 
