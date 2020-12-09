@@ -1,8 +1,18 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
+import { auth } from "./firebase";
+import { useStateValue } from "./StateProvider";
 
 function Home() {
+  const [{ auth, user }] = useStateValue();
+
+  const handleAuthentication = () => {
+    if (user) {
+      auth.signOut();
+    }
+  };
+  console.log(auth);
   return (
     <div className="home__container">
       <div className="home">
@@ -14,13 +24,14 @@ function Home() {
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
+              nisi ut aliquip.
             </h3>
-            <button className="button_log">Log In</button>
-            <button className="button_sign">Sign In</button>
+
+            <Link to={!user && "/Login"}>
+              <button className="button_sign" onClick={handleAuthentication}>
+                {user ? "Sign Out" : "Sign In / Sign Up"}
+              </button>
+            </Link>
           </div>
         </div>
 

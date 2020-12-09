@@ -7,6 +7,11 @@ import Foo from "./components/Foo";
 import Test from "./components/Test";
 import Info from "./components/Info";
 import Learn from "./components/Learn";
+import Login from "./components/Login";
+
+import { render } from "react-dom";
+import Carousel from "./components/Carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 function App() {
   return (
     <Router>
@@ -31,6 +36,11 @@ function App() {
             <Header />
             <Info />
             <Footer />
+          </Route>
+
+          {/*Login */}
+          <Route path="/login">
+            <Login />
           </Route>
 
           {/*Home Page */}

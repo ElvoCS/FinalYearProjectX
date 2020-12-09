@@ -10,6 +10,9 @@
   height: 100px;
   padding: 50px;
 }
+.home__imageNtext {
+  margin-bottom: 50px;
+}
 .title {
   text-align: center;
   font-size: 15px;
@@ -19,7 +22,9 @@
   text-align: center;
   align-items: center;
   margin-bottom: 50px;
-  width: 50%;
+  margin-top: 50px;
+  width: 100px;
+  border-radius: 30px;
 }
 
 .breaker {
